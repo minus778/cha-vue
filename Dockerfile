@@ -1,5 +1,6 @@
 #nginx服务器
 FROM nginx
+FROM node
 LABEL name="cha-vue"
 LABEL version="1.0.0"
 #安装项目依赖
