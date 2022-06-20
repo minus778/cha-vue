@@ -3,6 +3,9 @@ FROM nginx
 FROM node
 LABEL name="cha-vue"
 LABEL version="1.0.0"
+#将项目所有文件放到/app文件夹下
+COPY . /app
+WORKDIR /app
 #安装项目依赖
 RUN npm install
 #打包项目
