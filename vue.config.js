@@ -1,4 +1,4 @@
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+//const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const CompressionPlugin = require('compression-webpack-plugin')
 
 module.exports = {
@@ -18,11 +18,11 @@ module.exports = {
     },
     //配置打包文件的根路径
     publicPath: process.env.VUE_APP_PUBLIC_PATH,
-    configureWebpack: {
-        plugins: [
-            new BundleAnalyzerPlugin()
-        ],
-    },
+    // configureWebpack: {
+    //     plugins: [
+    //         new BundleAnalyzerPlugin()
+    //     ],
+    // },
 
     chainWebpack: (config) => {
         if (process.env.NODE_ENV === 'production') {
