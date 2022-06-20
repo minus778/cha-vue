@@ -6,8 +6,8 @@ LABEL version="1.0.0"
 COPY  ./dist/ /usr/share/nginx/html/cha
 #将前端nginx配置文件放在nginx子配置文件夹目录下
 COPY ./nginx/cha-vue.conf /etc/nginx/conf.d/
-# COPY ./nginx/gzip.conf /etc/nginx/conf.d/
-# #重启nginx
-# RUN nginx -s reload
-#前端项目端口号设置为80
+COPY ./nginx/gzip.conf /etc/nginx/conf.d/
+#重启nginx
+RUN nginx -s reload
+# 前端项目端口号设置为80
 EXPOSE 80
