@@ -7,11 +7,7 @@
 </template>
 
 <script>
-export default {
-  mounted() {
-    console.log(process.env);
-  },
-};
+export default {};
 </script>
 
 
