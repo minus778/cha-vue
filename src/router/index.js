@@ -18,27 +18,26 @@ const routes = [
   },
   {
     path: "/home",
-    home: "home",
+    name: "home",
     component: () => import('@/views/Home.vue')
   },
   {
     path: "/list",
-    home: "list",
+    name: "list",
     component: () => import('@/views/List.vue')
   },
   {
     path: "/cart",
-    home: "cart",
+    name: "cart",
     component: () => import('@/views/Cart.vue')
   },
   {
     path: "/my",
-    home: "my",
+    name: "my",
     component: () => import('@/views/My.vue')
   },
   {
     path: "/search",
-    home: "search",
     component: () => import('@/views/Search.vue'),
     children: [
       {
@@ -119,7 +118,7 @@ const routes = [
 
 const router = new VueRouter({
   mode: 'history',
-  base: process.env.BASE_URL,
+  //base: process.env.BASE_URL,
   routes
 })
 
