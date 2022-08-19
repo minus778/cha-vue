@@ -1,6 +1,6 @@
 #nginx服务器
 FROM nginx
-FROM node:16
+# FROM node:16
 LABEL name="cha-vue"
 LABEL version="1.0.0"
 # RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
